@@ -22,7 +22,7 @@ Pokedex _$PokedexFromJson(Map<String, dynamic> json) {
 mixin _$Pokedex {
   int get id => throw _privateConstructorUsedError;
   Name get name => throw _privateConstructorUsedError;
-  List<Type> get types => throw _privateConstructorUsedError;
+  List<String> get types => throw _privateConstructorUsedError;
   Base get base => throw _privateConstructorUsedError;
 
   /// Serializes this Pokedex to a JSON map.
@@ -39,7 +39,7 @@ abstract class $PokedexCopyWith<$Res> {
   factory $PokedexCopyWith(Pokedex value, $Res Function(Pokedex) then) =
       _$PokedexCopyWithImpl<$Res, Pokedex>;
   @useResult
-  $Res call({int id, Name name, List<Type> types, Base base});
+  $Res call({int id, Name name, List<String> types, Base base});
 
   $NameCopyWith<$Res> get name;
   $BaseCopyWith<$Res> get base;
@@ -77,7 +77,7 @@ class _$PokedexCopyWithImpl<$Res, $Val extends Pokedex>
       types: null == types
           ? _value.types
           : types // ignore: cast_nullable_to_non_nullable
-              as List<Type>,
+              as List<String>,
       base: null == base
           ? _value.base
           : base // ignore: cast_nullable_to_non_nullable
@@ -113,7 +113,7 @@ abstract class _$$PokedexImplCopyWith<$Res> implements $PokedexCopyWith<$Res> {
       __$$PokedexImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({int id, Name name, List<Type> types, Base base});
+  $Res call({int id, Name name, List<String> types, Base base});
 
   @override
   $NameCopyWith<$Res> get name;
@@ -151,7 +151,7 @@ class __$$PokedexImplCopyWithImpl<$Res>
       types: null == types
           ? _value._types
           : types // ignore: cast_nullable_to_non_nullable
-              as List<Type>,
+              as List<String>,
       base: null == base
           ? _value.base
           : base // ignore: cast_nullable_to_non_nullable
@@ -166,7 +166,7 @@ class _$PokedexImpl implements _Pokedex {
   const _$PokedexImpl(
       {required this.id,
       required this.name,
-      required final List<Type> types,
+      required final List<String> types,
       required this.base})
       : _types = types;
 
@@ -177,9 +177,9 @@ class _$PokedexImpl implements _Pokedex {
   final int id;
   @override
   final Name name;
-  final List<Type> _types;
+  final List<String> _types;
   @override
-  List<Type> get types {
+  List<String> get types {
     if (_types is EqualUnmodifiableListView) return _types;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_types);
@@ -229,7 +229,7 @@ abstract class _Pokedex implements Pokedex {
   const factory _Pokedex(
       {required final int id,
       required final Name name,
-      required final List<Type> types,
+      required final List<String> types,
       required final Base base}) = _$PokedexImpl;
 
   factory _Pokedex.fromJson(Map<String, dynamic> json) = _$PokedexImpl.fromJson;
@@ -239,7 +239,7 @@ abstract class _Pokedex implements Pokedex {
   @override
   Name get name;
   @override
-  List<Type> get types;
+  List<String> get types;
   @override
   Base get base;
 

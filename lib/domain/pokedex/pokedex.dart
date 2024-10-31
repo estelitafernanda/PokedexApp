@@ -1,7 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:pokedexapp/base.dart';
-import 'package:pokedexapp/name.dart';
-import 'package:pokedexapp/type.dart';
+import 'package:pokedexapp/domain/base/base.dart';
+import 'package:pokedexapp/domain/name/name.dart';
 
 part 'pokedex.freezed.dart';
 part 'pokedex.g.dart'; 
@@ -11,7 +10,7 @@ class Pokedex with _$Pokedex{
   const factory Pokedex({
     required int id,
     required Name name,
-    required List <Type> types,
+    required List <String> types,
     required Base base,
   }) = _Pokedex;
 
