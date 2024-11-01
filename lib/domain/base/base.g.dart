@@ -7,20 +7,20 @@ part of 'base.dart';
 // **************************************************************************
 
 _$BaseImpl _$$BaseImplFromJson(Map<String, dynamic> json) => _$BaseImpl(
-      HP: (json['HP'] as num).toInt(),
-      Attack: (json['Attack'] as num).toInt(),
-      Defense: (json['Defense'] as num).toInt(),
-      spAttack: (json['Sp. Attack'] as num).toInt(),
-      spDefense: (json['Sp. Defense'] as num).toInt(),
-      Speed: (json['Speed'] as num).toInt(),
+      hp: (json['hp'] as num).toInt(),
+      attack: (json['attack'] as num).toInt(),
+      defense: (json['defense'] as num).toInt(),
+      spAttack: (json['spAttack'] as num).toInt(),
+      spDefense: (json['spDefense'] as num).toInt(),
+      speed: (json['speed'] as num).toInt(),
     );
 
 Map<String, dynamic> _$$BaseImplToJson(_$BaseImpl instance) =>
     <String, dynamic>{
-      'HP': instance.HP,
-      'Attack': instance.Attack,
-      'Defense': instance.Defense,
-      'Sp. Attack': instance.spAttack,
-      'Sp. Defense': instance.spDefense,
-      'Speed': instance.Speed,
+      'hp': instance.hp,
+      'attack': instance.attack,
+      'defense': instance.defense,
+      'spAttack': instance.spAttack,
+      'spDefense': instance.spDefense,
+      'speed': instance.speed,
     };

@@ -6,12 +6,12 @@ part 'base.g.dart';
 @freezed
 class Base with _$Base{
   const factory Base({
-    required int HP,
-    required int Attack,
-    required int Defense,
-    @JsonKey(name: 'Sp. Attack') required int spAttack,
-    @JsonKey(name: 'Sp. Defense') required int spDefense,
-    required int Speed,
+    required int hp,
+    required int attack,
+    required int defense,
+    required int spAttack,
+    required int spDefense,
+    required int speed,
   }) = _Base; 
 
   factory Base.fromJson(Map<String, dynamic> json) => _$BaseFromJson(json);

@@ -20,14 +20,12 @@ Base _$BaseFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$Base {
-  int get HP => throw _privateConstructorUsedError;
-  int get Attack => throw _privateConstructorUsedError;
-  int get Defense => throw _privateConstructorUsedError;
-  @JsonKey(name: 'Sp. Attack')
+  int get hp => throw _privateConstructorUsedError;
+  int get attack => throw _privateConstructorUsedError;
+  int get defense => throw _privateConstructorUsedError;
   int get spAttack => throw _privateConstructorUsedError;
-  @JsonKey(name: 'Sp. Defense')
   int get spDefense => throw _privateConstructorUsedError;
-  int get Speed => throw _privateConstructorUsedError;
+  int get speed => throw _privateConstructorUsedError;
 
   /// Serializes this Base to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -44,12 +42,12 @@ abstract class $BaseCopyWith<$Res> {
       _$BaseCopyWithImpl<$Res, Base>;
   @useResult
   $Res call(
-      {int HP,
-      int Attack,
-      int Defense,
-      @JsonKey(name: 'Sp. Attack') int spAttack,
-      @JsonKey(name: 'Sp. Defense') int spDefense,
-      int Speed});
+      {int hp,
+      int attack,
+      int defense,
+      int spAttack,
+      int spDefense,
+      int speed});
 }
 
 /// @nodoc
@@ -67,25 +65,25 @@ class _$BaseCopyWithImpl<$Res, $Val extends Base>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? HP = null,
-    Object? Attack = null,
-    Object? Defense = null,
+    Object? hp = null,
+    Object? attack = null,
+    Object? defense = null,
     Object? spAttack = null,
     Object? spDefense = null,
-    Object? Speed = null,
+    Object? speed = null,
   }) {
     return _then(_value.copyWith(
-      HP: null == HP
-          ? _value.HP
-          : HP // ignore: cast_nullable_to_non_nullable
+      hp: null == hp
+          ? _value.hp
+          : hp // ignore: cast_nullable_to_non_nullable
               as int,
-      Attack: null == Attack
-          ? _value.Attack
-          : Attack // ignore: cast_nullable_to_non_nullable
+      attack: null == attack
+          ? _value.attack
+          : attack // ignore: cast_nullable_to_non_nullable
               as int,
-      Defense: null == Defense
-          ? _value.Defense
-          : Defense // ignore: cast_nullable_to_non_nullable
+      defense: null == defense
+          ? _value.defense
+          : defense // ignore: cast_nullable_to_non_nullable
               as int,
       spAttack: null == spAttack
           ? _value.spAttack
@@ -95,9 +93,9 @@ class _$BaseCopyWithImpl<$Res, $Val extends Base>
           ? _value.spDefense
           : spDefense // ignore: cast_nullable_to_non_nullable
               as int,
-      Speed: null == Speed
-          ? _value.Speed
-          : Speed // ignore: cast_nullable_to_non_nullable
+      speed: null == speed
+          ? _value.speed
+          : speed // ignore: cast_nullable_to_non_nullable
               as int,
     ) as $Val);
   }
@@ -111,12 +109,12 @@ abstract class _$$BaseImplCopyWith<$Res> implements $BaseCopyWith<$Res> {
   @override
   @useResult
   $Res call(
-      {int HP,
-      int Attack,
-      int Defense,
-      @JsonKey(name: 'Sp. Attack') int spAttack,
-      @JsonKey(name: 'Sp. Defense') int spDefense,
-      int Speed});
+      {int hp,
+      int attack,
+      int defense,
+      int spAttack,
+      int spDefense,
+      int speed});
 }
 
 /// @nodoc
@@ -131,25 +129,25 @@ class __$$BaseImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? HP = null,
-    Object? Attack = null,
-    Object? Defense = null,
+    Object? hp = null,
+    Object? attack = null,
+    Object? defense = null,
     Object? spAttack = null,
     Object? spDefense = null,
-    Object? Speed = null,
+    Object? speed = null,
   }) {
     return _then(_$BaseImpl(
-      HP: null == HP
-          ? _value.HP
-          : HP // ignore: cast_nullable_to_non_nullable
+      hp: null == hp
+          ? _value.hp
+          : hp // ignore: cast_nullable_to_non_nullable
               as int,
-      Attack: null == Attack
-          ? _value.Attack
-          : Attack // ignore: cast_nullable_to_non_nullable
+      attack: null == attack
+          ? _value.attack
+          : attack // ignore: cast_nullable_to_non_nullable
               as int,
-      Defense: null == Defense
-          ? _value.Defense
-          : Defense // ignore: cast_nullable_to_non_nullable
+      defense: null == defense
+          ? _value.defense
+          : defense // ignore: cast_nullable_to_non_nullable
               as int,
       spAttack: null == spAttack
           ? _value.spAttack
@@ -159,9 +157,9 @@ class __$$BaseImplCopyWithImpl<$Res>
           ? _value.spDefense
           : spDefense // ignore: cast_nullable_to_non_nullable
               as int,
-      Speed: null == Speed
-          ? _value.Speed
-          : Speed // ignore: cast_nullable_to_non_nullable
+      speed: null == speed
+          ? _value.speed
+          : speed // ignore: cast_nullable_to_non_nullable
               as int,
     ));
   }
@@ -171,34 +169,32 @@ class __$$BaseImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$BaseImpl implements _Base {
   const _$BaseImpl(
-      {required this.HP,
-      required this.Attack,
-      required this.Defense,
-      @JsonKey(name: 'Sp. Attack') required this.spAttack,
-      @JsonKey(name: 'Sp. Defense') required this.spDefense,
-      required this.Speed});
+      {required this.hp,
+      required this.attack,
+      required this.defense,
+      required this.spAttack,
+      required this.spDefense,
+      required this.speed});
 
   factory _$BaseImpl.fromJson(Map<String, dynamic> json) =>
       _$$BaseImplFromJson(json);
 
   @override
-  final int HP;
+  final int hp;
   @override
-  final int Attack;
+  final int attack;
   @override
-  final int Defense;
+  final int defense;
   @override
-  @JsonKey(name: 'Sp. Attack')
   final int spAttack;
   @override
-  @JsonKey(name: 'Sp. Defense')
   final int spDefense;
   @override
-  final int Speed;
+  final int speed;
 
   @override
   String toString() {
-    return 'Base(HP: $HP, Attack: $Attack, Defense: $Defense, spAttack: $spAttack, spDefense: $spDefense, Speed: $Speed)';
+    return 'Base(hp: $hp, attack: $attack, defense: $defense, spAttack: $spAttack, spDefense: $spDefense, speed: $speed)';
   }
 
   @override
@@ -206,20 +202,20 @@ class _$BaseImpl implements _Base {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$BaseImpl &&
-            (identical(other.HP, HP) || other.HP == HP) &&
-            (identical(other.Attack, Attack) || other.Attack == Attack) &&
-            (identical(other.Defense, Defense) || other.Defense == Defense) &&
+            (identical(other.hp, hp) || other.hp == hp) &&
+            (identical(other.attack, attack) || other.attack == attack) &&
+            (identical(other.defense, defense) || other.defense == defense) &&
             (identical(other.spAttack, spAttack) ||
                 other.spAttack == spAttack) &&
             (identical(other.spDefense, spDefense) ||
                 other.spDefense == spDefense) &&
-            (identical(other.Speed, Speed) || other.Speed == Speed));
+            (identical(other.speed, speed) || other.speed == speed));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
-      Object.hash(runtimeType, HP, Attack, Defense, spAttack, spDefense, Speed);
+      Object.hash(runtimeType, hp, attack, defense, spAttack, spDefense, speed);
 
   /// Create a copy of Base
   /// with the given fields replaced by the non-null parameter values.
@@ -239,29 +235,27 @@ class _$BaseImpl implements _Base {
 
 abstract class _Base implements Base {
   const factory _Base(
-      {required final int HP,
-      required final int Attack,
-      required final int Defense,
-      @JsonKey(name: 'Sp. Attack') required final int spAttack,
-      @JsonKey(name: 'Sp. Defense') required final int spDefense,
-      required final int Speed}) = _$BaseImpl;
+      {required final int hp,
+      required final int attack,
+      required final int defense,
+      required final int spAttack,
+      required final int spDefense,
+      required final int speed}) = _$BaseImpl;
 
   factory _Base.fromJson(Map<String, dynamic> json) = _$BaseImpl.fromJson;
 
   @override
-  int get HP;
+  int get hp;
   @override
-  int get Attack;
+  int get attack;
   @override
-  int get Defense;
+  int get defense;
   @override
-  @JsonKey(name: 'Sp. Attack')
   int get spAttack;
   @override
-  @JsonKey(name: 'Sp. Defense')
   int get spDefense;
   @override
-  int get Speed;
+  int get speed;
 
   /// Create a copy of Base
   /// with the given fields replaced by the non-null parameter values.
